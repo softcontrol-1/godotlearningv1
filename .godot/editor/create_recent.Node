@@ -1,0 +1,11 @@
+CanvasLayer
+CollisionShape2D
+Area2D
+Button
+Label
+ColorRect
+Node2D
+AnimatedSprite2D
+CharacterBody2D
+Camera2D
+StaticBody2D

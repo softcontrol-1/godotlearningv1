@@ -1,0 +1,399 @@
+[gd_scene load_steps=7 format=3 uid="uid://bm4lknc8nmc6i"]
+
+[ext_resource type="Texture2D" uid="uid://b5x85d2lcq4m1" path="res://assets/Ortam/Ground.png" id="1_444vf"]
+[ext_resource type="Texture2D" uid="uid://d0gb4eagu1a5l" path="res://assets/Ortam/FrontBushes.png" id="2_27ga2"]
+[ext_resource type="PackedScene" uid="uid://2ffl6emdwt06" path="res://Player1.tscn" id="3_27ga2"]
+[ext_resource type="Texture2D" uid="uid://tgxgj8uhil77" path="res://assets/Ortam/NearTrees.png" id="4_h0wof"]
+[ext_resource type="PackedScene" uid="uid://c0t72w342wfqd" path="res://enemy.tscn" id="5_fu4bq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h0wof"]
+size = Vector2(1149, 59)
+
+[node name="Arena" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(579.5, 619.5)
+scale = Vector2(10000, 1)
+shape = SubResource("RectangleShape2D_h0wof")
+
+[node name="Node2D" parent="." instance=ExtResource("3_27ga2")]
+position = Vector2(20, 6)
+
+[node name="allgrounds" type="Node2D" parent="."]
+show_behind_parent = true
+
+[node name="ground" type="Node2D" parent="allgrounds"]
+position = Vector2(322, 466)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground2" type="Node2D" parent="allgrounds"]
+position = Vector2(1475, 469)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground2"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground2"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground2"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground2"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground2"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground2"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground3" type="Node2D" parent="allgrounds"]
+position = Vector2(2624, 471)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground3"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground3"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground3"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground3"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground3"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground3"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground4" type="Node2D" parent="allgrounds"]
+position = Vector2(3776, 471)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground4"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground4"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground4"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground4"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground4"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground4"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground5" type="Node2D" parent="allgrounds"]
+position = Vector2(4928, 472)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground5"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground5"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground5"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground5"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground5"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground5"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground6" type="Node2D" parent="allgrounds"]
+position = Vector2(6079, 478)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground6"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground6"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground6"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground6"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground6"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground6"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground7" type="Node2D" parent="allgrounds"]
+position = Vector2(-814, 464)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground7"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground7"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground7"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground7"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground7"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground7"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground8" type="Node2D" parent="allgrounds"]
+position = Vector2(-1963, 469)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground8"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground8"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground8"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground8"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground8"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground8"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground9" type="Node2D" parent="allgrounds"]
+position = Vector2(-3099, 473)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground9"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground9"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground9"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground9"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground9"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground9"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground10" type="Node2D" parent="allgrounds"]
+position = Vector2(-4243, 477)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground10"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground10"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground10"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground10"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground10"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground10"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="ground11" type="Node2D" parent="allgrounds"]
+position = Vector2(-5400, 477)
+
+[node name="Ground" type="Sprite2D" parent="allgrounds/ground11"]
+texture = ExtResource("1_444vf")
+
+[node name="Ground2" type="Sprite2D" parent="allgrounds/ground11"]
+position = Vector2(510, 0)
+texture = ExtResource("1_444vf")
+
+[node name="FrontBushes" type="Sprite2D" parent="allgrounds/ground11"]
+position = Vector2(-1, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="FrontBushes2" type="Sprite2D" parent="allgrounds/ground11"]
+position = Vector2(510, -58)
+texture = ExtResource("2_27ga2")
+
+[node name="NearTrees" type="Sprite2D" parent="allgrounds/ground11"]
+show_behind_parent = true
+position = Vector2(-2, -54)
+texture = ExtResource("4_h0wof")
+
+[node name="NearTrees2" type="Sprite2D" parent="allgrounds/ground11"]
+show_behind_parent = true
+position = Vector2(625, -56)
+texture = ExtResource("4_h0wof")
+
+[node name="Node2D2" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(4888, -84)
+
+[node name="Node2D3" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-5154, -1002)
+
+[node name="Node2D4" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-4636, -1308)
+
+[node name="Node2D14" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-2843, -855)
+
+[node name="Node2D15" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-3848, -816)
+
+[node name="Node2D16" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-8980, -2274)
+
+[node name="Node2D17" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-8370, -1742)
+
+[node name="Node2D20" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-7897, -1318)
+
+[node name="Node2D18" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-7365, -1821)
+
+[node name="Node2D19" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-6813, -1289)
+
+[node name="Node2D21" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-6104, -1427)
+
+[node name="Node2D22" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(2375, -69)
+
+[node name="Node2D23" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(-1120, -1882)
+
+[node name="Node2D5" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(3893, -1306)
+
+[node name="Node2D6" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(7798, -1223)
+
+[node name="Node2D13" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(8101, -1519)
+
+[node name="Node2D11" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(6954, -1401)
+
+[node name="Node2D12" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(7435, -824)
+
+[node name="Node2D9" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(6444, -1467)
+
+[node name="Node2D10" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(8627, -535)
+
+[node name="Node2D7" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(9079, -1297)
+
+[node name="Node2D8" parent="." instance=ExtResource("5_fu4bq")]
+position = Vector2(9079, -1297)
